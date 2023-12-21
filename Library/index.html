@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <h1>Library App</h1>
+        <p>Project for the <a>The Odin Project</a> using Object Constructors </p>
+        <button class="newBook" type="button">
+            + Add Book
+        </button>
+    </div>
+
+    <div class="modal">
+        <div class="modalContent">
+            <div class="modalHeader">
+                <h1>Add a Book</h1>
+                <button class="close" type="button">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="modalBody">
+                <form action="" id="bookForm" method="POST">
+                    
+                    <label for="author">Author:</label> <br />
+                    <input type="text" placeholder="Stephen King etc.." id="author" class="author" required/> <br />
+
+                    <label for="title">Title:</label> <br />
+                    <input type="text" placeholder="Coding 101 etc.." id="title" class="title" required/> <br />
+
+                    <label for="pages">Pages:</label> <br />
+                    <input type="number" placeholder="Number of pages" id="pages" class="pages" required/> <br />
+
+                    <span>Have you read the book?</span>
+
+                    <label for="read" class="switch">
+                        <input type="checkbox" form="read"/>
+                        <span class="slider round"></span>
+                    </label> <br />
+
+                    <button class="submitBtn" type="submit"> Submit </button>
+                </form>
+            </div>
+
+            <div id="renderLibrary"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
