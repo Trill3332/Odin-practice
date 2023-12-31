@@ -1,3 +1,61 @@
+.bookTitle {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.bookAuthor,
+.bookTitle,
+.numPages {
+  text-align: center;
+}
+
+.numberStyle {
+  font-weight: bolder;
+}
+
+.bookAuthor {
+  margin-bottom: 2rem;
+}
+
+.readBtn {
+  border-radius: 10px;
+}
+
+.readBtn,
+.deleteBookBtn {
+  outline: none;
+  border: none;
+  margin: 1rem;
+  height: 35px;
+  width: auto;
+}
+
+.deleteBookBtn {
+  border-bottom: solid 2px;
+}
+
+.deleteBookBtn:hover {
+  background-color: red;
+  border-radius: 10px;
+}
+
+.bookContainer {
+  background-color: #fff7e6;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  max-width: 200px;
+}
+
+#renderLibrary {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
 .main {
   text-align: center;
 }
@@ -34,6 +92,9 @@
   top: 0;
   left: 0;
   display: none;
+}
+.open {
+    display: block;
 }
 
 .modalHeader {

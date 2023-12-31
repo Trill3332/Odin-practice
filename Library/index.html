@@ -27,7 +27,7 @@
                 </button>
             </div>
             <div class="modalBody">
-                <form action="" id="bookForm" method="POST">
+                <form action="" id="bookForm">
                     
                     <label for="author">Author:</label> <br />
                     <input type="text" placeholder="Stephen King etc.." id="author" class="author" required/> <br />
@@ -41,17 +41,17 @@
                     <span>Have you read the book?</span>
 
                     <label for="read" class="switch">
-                        <input type="checkbox" form="read"/>
+                        <input type="checkbox" id="read" class="read"/>
                         <span class="slider round"></span>
                     </label> <br />
 
                     <button class="submitBtn" type="submit"> Submit </button>
                 </form>
             </div>
-
-            <div id="renderLibrary"></div>
         </div>
     </div>
+
+    <div id="renderLibrary"></div>
 
     <script src="main.js"></script>
 </body>
