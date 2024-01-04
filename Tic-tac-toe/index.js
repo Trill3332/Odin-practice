@@ -19,7 +19,7 @@ const winningMessageElement = document.getElementById('resultMessage')
 const restartButton = document.getElementById('restartBtn')
 let circleTurn;
 let userSelection;
-
+let currentPlayer;
 restartButton.addEventListener('click',startGame)
 
 X_SELECTION.addEventListener('click', () => handleUserSelection(X_CLASS));
@@ -27,6 +27,7 @@ CIRCLE_SELECTION.addEventListener('click', () => handleUserSelection(CIRCLE_CLAS
 
 function handleUserSelection(selection) {
     userSelection = selection;
+    currentPlayer = userSelection;
     startGame();
     removeSelectionScreen();
 }
@@ -36,6 +37,7 @@ function removeSelectionScreen() {
 }
 function startGame() {
     circleTurn = userSelection === CIRCLE_CLASS;
+    currentPlayer = userSelection;
     cellElements.forEach(cell => {
         cell.classList.remove(X_CLASS)
         cell.classList.remove(CIRCLE_CLASS)
