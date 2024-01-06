@@ -48,37 +48,38 @@
 
 //Factory Functions
 
-function createUser (name) {
-    const discordName = "@" + name;
+// function createUser (name) {
+//     const discordName = "@" + name;
   
-    let reputation = 0;
-    const getReputation = () => reputation;
-    const giveReputation = () => reputation++;
+//     let reputation = 0;
+//     const getReputation = () => reputation;
+//     const giveReputation = () => reputation++;
   
-    return { name, discordName, getReputation, giveReputation };
-  }
+//     return { name, discordName, getReputation, giveReputation };
+//   }
   
-  const josh = createUser("josh");
-  josh.giveReputation();
-  josh.giveReputation();
+//   const josh = createUser("josh");
+//   josh.giveReputation();
+//   josh.giveReputation();
   
-  console.log({
-    discordName: josh.discordName,
-    reputation: josh.getReputation()
-  });
-  // logs { discordName: "@josh", reputation: 2 }
+//   console.log({
+//     discordName: josh.discordName,
+//     reputation: josh.getReputation()
+//   });
+//   // logs { discordName: "@josh", reputation: 2 }
 
-  function createPlayer (name, level) {
-    const user = createUser(name);
+//   function createPlayer (name, level) {
+//     const user = createUser(name);
   
-    const increaseLevel = () => level++;
-    return Object.assign({}, user, { increaseLevel });
-  }
+//     const increaseLevel = () => level++;
+//     return Object.assign({}, user, { increaseLevel });
+//   }
 
-  const joshPlayer = createPlayer("Beegii", 24);
-  joshPlayer.increaseLevel();
-  console.log({
-    discordName : joshPlayer.discordName,
-    level : joshPlayer.increaseLevel(),
-    name : joshPlayer.name
-  })
+//   const joshPlayer = createPlayer("Beegii", 24);
+//   joshPlayer.increaseLevel();
+//   console.log({
+//     discordName : joshPlayer.discordName,
+//     level : joshPlayer.increaseLevel(),
+//     name : joshPlayer.name
+//   })
+
