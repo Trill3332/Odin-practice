@@ -83,3 +83,75 @@
 //     name : joshPlayer.name
 //   })
 
+//Class getters and setters
+
+// class bankAccount {
+//     constructor(accountHolder,balance) {
+//         this._accountHolder = accountHolder;
+//         this._balance = balance;
+//         this._interestRate = 0.02;
+//     }
+
+//     get accountHolder() {
+//         return this._accountHolder;
+//     }
+//     get balance() {
+//         return this._balance;
+//     }
+
+//     deposit(amount) {
+//         if(amount > 0 ) {
+//             this._balance += amount;
+//             console.log(`Deposited ${amount}.New balance : $ ${this._balance}`)
+//         } else {
+//             console.log('Invalid deposit amount')
+//         }
+//     }
+//     withdraw(amount) {
+//         if(amount > 0 && amount < this._balance) {
+//             this._balance -= amount;
+//             console.log(`Withdrawn ${amount},New Balance : $ ${this._balance}`)
+//         }
+//     }
+//     get interest() {
+//         return this._balance * this._interestRate;
+//     }
+// }
+// const myAccount = new bankAccount("John Doe",1000);
+// console.log(myAccount._accountHolder)
+// console.log(myAccount._balance)
+// myAccount.deposit(500);
+// console.log(myAccount)
+// myAccount.withdraw(1400);
+// console.log(myAccount)
+// console.log(myAccount.interest)
+
+//JS Classes Challenge 1 
+// class Animal {
+//     constructor(name,sound) {
+//         this._name = name;
+//         this._sound = sound;
+//     }
+//     makeSound() {
+//         console.log(`${this._name} makes this sound : ${this._sound}`)
+//     } 
+// }
+
+// let newAnimal = new Animal("Dog","Woof")
+
+// newAnimal.makeSound();
+//JS Classes Challenge 2 
+// class Book {
+//     constructor(title,author,publishedYear) {
+//         this._title = title;
+//         this._author = author;
+//         this._year = publishedYear
+//     }
+//     displayInfo() {
+//         console.log(`This book is named : ${this._title} by ${this._author} in : ${this._year},`)
+//     }
+// }
+
+// let newBook = new Book("Beegii","CasinoLoser","2024");
+
+// newBook.displayInfo();
